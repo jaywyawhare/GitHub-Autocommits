@@ -6,7 +6,8 @@
 
 for (( ; ; ))
 do
-    echo " " >> test.txt
+    rm test.txt
+    touch test.txt
     git add .
     git commit -m "auto commit"
     git push
