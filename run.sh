@@ -1,5 +1,3 @@
-#create a script to git commit and push in every 5 minutes
-
 #!/bin/sh
 
 
