@@ -6,8 +6,19 @@
 
 for (( ; ; ))
 do
-    rm test.txt
-    touch test.txt
+    
+    #check test.txt file is present if no then create one
+    if [ ! -f test.txt ]
+    then
+        touch test.txt
+    fi
+
+    #check test.txt file is present if yes then delete it
+    if [ -f test.txt ]
+    then
+        rm test.txt
+    fi
+
     git add .
     git commit -m "auto commit"
     git push
