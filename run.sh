@@ -6,7 +6,7 @@
 
 for (( ; ; ))
 do
-    #check if test.txt exists if yes then remove it if not then create it
+
     if [ -f test.txt ]
     then
         rm test.txt
