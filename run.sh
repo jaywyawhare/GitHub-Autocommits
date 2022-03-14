@@ -6,17 +6,12 @@
 
 for (( ; ; ))
 do
-    
-    #check test.txt file is present if no then create one
-    if [ ! -f test.txt ]
-    then
-        touch test.txt
-    fi
-
-    #check test.txt file is present if yes then delete it
+    #check if test.txt exists if yes then remove it if not then create it
     if [ -f test.txt ]
     then
         rm test.txt
+    else
+        touch test.txt
     fi
 
     git add .
