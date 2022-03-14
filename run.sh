@@ -15,5 +15,5 @@ do
     git add .
     git commit -m "auto commit"
     git push
-    sleep 3
+    sleep 300
 done
