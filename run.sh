@@ -2,13 +2,13 @@
 
 #!/bin/sh
 
-$time = date +%H:%M
+
 
 for (( ; ; ))
 do
-    echo $time >> test.txt
+    echo " " >> test.txt
     git add .
     git commit -m "auto commit"
     git push
-    sleep 300
+    sleep 3
 done
