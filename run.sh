@@ -20,11 +20,12 @@ developer_name_list=(
 "RandomGuy"
 "CoolDude69"
 )
-developer_name=${developer_name_list[$RANDOM % ${#developer_name_list[@]} ]}
-commit_message=${commit_message_list[$RANDOM % ${#commit_message_list[@]} ]}
 
 for (( i=1; i<70; i++ ))
 do
+    developer_name=${developer_name_list[$RANDOM % ${#developer_name_list[@]} ]}
+    commit_message=${commit_message_list[$RANDOM % ${#commit_message_list[@]} ]}
+    
     if [ -f test.txt ]
     then
         rm test.txt
