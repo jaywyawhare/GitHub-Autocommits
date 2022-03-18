@@ -36,7 +36,6 @@ do
     git add .
     git commit -m "$commit_message by $developer_name"
     git push
-    sleep 1
 done
 
 # for (( ; ; ))
