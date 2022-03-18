@@ -6,7 +6,29 @@ commit_message_list=(
 "update"
 "test"
 "minor patch"
-"error resolve"
+"segmentation fault fix"
+"Runtime error fix"
+"compile error fix"
+"memory leak fix"
+"unknown error fix"
+"syntax error fix"
+"compiler error fix"
+"logic error fix"
+"Runtime error fix"
+"arithmatic error fix"
+"buffer overflow fix"
+"null pointer fix"
+"divide by zero fix"
+"stack overflow fix"
+"stack underflow fix"
+"illegal instruction fix"
+"illegal memory access fix"
+"illegal memory address fix"
+"illegal memory reference fix"
+"array index out of bounds fix"
+"array index overflow fix"
+"array index underflow fix"
+"array index negative fix"
 )
 developer_name_list=(
 "jay"
@@ -20,6 +42,7 @@ developer_name_list=(
 "RandomGuy"
 "CoolDude69"
 )
+
 
 for (( i=1; i<70; i++ ))
 do
@@ -37,21 +60,3 @@ do
     git commit -m "$commit_message by $developer_name"
     git push
 done
-
-# for (( ; ; ))
-# do
-#
-#    if [ -f test.txt ]
-#    then
-#        rm test.txt
-#    else
-#        touch test.txt
-#    fi
-#
-#    git add .
-#    git commit -m "auto commit"
-#    git push
-#    sleep 1
-# done
-
-
